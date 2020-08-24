@@ -5,8 +5,9 @@ metadata:
 spec:
   rules:
     - http:
-      - path: /department
-        backend:
-          serviceName: department-service
-          servicePort: 32039
+        paths:
+        - path: /department
+          backend:
+            serviceName: department-service
+            servicePort: 32039
 

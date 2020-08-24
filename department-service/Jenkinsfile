@@ -43,7 +43,7 @@ spec:
               container('kubectl') {
                   sh '''
                       cd $SERVICE_NAME
-                      kubectl --token=$TOKEN -n tester get all
+                      kubectl --token=$TOKEN -n test get all
                   '''
               }
           }

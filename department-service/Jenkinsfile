@@ -35,7 +35,7 @@ spec:
     CREDS = credentials('DockerHub_creds_omar')
     DOCKER_NAMESPACE = 'ozb96'
     SERVICE_NAME = 'department-service'
-    TOKEN=credentials('tester_token')
+    TOKEN=credentials('9351a73f-079f-4fb2-ae2f-074e6435fec9')
   }
   stages {
       stage("debug") {

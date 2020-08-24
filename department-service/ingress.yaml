@@ -3,7 +3,8 @@ kind: Ingress
 metadata:
   name: department-ingress
 spec:
+ -path: /department
   backend:
     serviceName: department-service
-    servicePort: 30010
+    servicePort: 32039
 

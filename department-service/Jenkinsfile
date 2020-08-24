@@ -38,17 +38,6 @@ spec:
     TOKEN=credentials('14b4f5dc-6c2e-44be-b76e-28b5e532df83')
   }
   stages {
-     stage("checkPermissons") {
-          steps {
-              container('kubectl') {
-                  sh '''
-                      cd $SERVICE_NAME
-                      kubectl --token=$TOKEN -n jenkins apply -f clusterRole.yaml
-                  '''
-              }
-          }
-      }
-
      stage("debug") {
           steps {
               container('kubectl') {

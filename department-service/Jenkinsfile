@@ -20,6 +20,7 @@ spec:
       name: docker-sock
   - name: kubectl
     image: bryandollery/terraform-packer-aws-alpine
+    args: ['-u','root']
     command:
     - cat
     tty: true

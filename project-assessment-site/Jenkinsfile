@@ -77,6 +77,7 @@ spec:
                       kubectl --token=$TOKEN -n test get all
                       kubectl --token=$TOKEN -n test apply -f deploy.yaml -f service.yaml
                       kubectl --token=$TOKEN -n test get all
+                      kubectl --token=$TOKEN -n test apply -f ingress.yaml
                   '''
               }
           }

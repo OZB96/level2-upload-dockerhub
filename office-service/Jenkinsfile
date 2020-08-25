@@ -35,7 +35,8 @@ spec:
     CREDS = credentials('DockerHub_creds_omar')
     DOCKER_NAMESPACE = 'ozb96'
     SERVICE_NAME = 'office-service'
-    TOKEN=credentials(credentials('kube_token'))
+    TOKEN_ID = credentials('kube_token')
+    TOKEN= credentials('$TOKEN_ID')
   }
   stages {
      stage("debug") {

@@ -24,7 +24,7 @@ spec:
     - cat
     tty: true
   volumes:
-  - name: docker-sock
+  - name: docker-socki
     hostPath:
       path: /var/run/docker.sock  
       type: Socket
@@ -35,7 +35,8 @@ spec:
     CREDS = credentials('DockerHub_creds_omar')
     DOCKER_NAMESPACE = 'ozb96'
     SERVICE_NAME = 'role-service'
-    TOKEN= credentials(credentials('kube_token'))
+    TOKEN_ID = credentials('kube_token')
+    TOKEN= credentials('$TOKEN_ID')
   }
   stages {
      stage("debug") {

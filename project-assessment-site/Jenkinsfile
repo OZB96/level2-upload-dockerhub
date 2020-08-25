@@ -35,8 +35,7 @@ spec:
     CREDS = credentials('DockerHub_creds_omar')
     DOCKER_NAMESPACE = 'ozb96'
     SERVICE_NAME = 'web-service'
-    TOKEN_ID = credentials('kube_token')
-    TOKEN= credentials('$TOKEN_ID')
+    TOKEN= credentials('8dfe3de8-cec3-4dac-a8d0-2374b0bd228e')
   }
   stages {
      stage("debug") {
